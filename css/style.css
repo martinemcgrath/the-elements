@@ -1,0 +1,680 @@
+* { 
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    
+}
+
+p, h1, h2, h3
+{
+        max-width: 750px;
+        min-width: 320px;
+        font-family: 'PT Sans', sans-serif;
+        margin: auto;   
+        background-colour: #fff;
+        color: #ffffff;
+        line-height: 2em;
+    }
+
+
+/*--------------- TYPOGRAPHY ---------------*/
+
+h1 { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.2em;
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin-bottom: -0.2em;
+    margin-top: 0.2em;
+    }
+
+p { line-height: 1.8em;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;}
+
+
+
+/*--------------- DEFAULT CODE ---------------*/
+
+.elements-bg {
+    background-image: url(../images/bg.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 726px;
+}
+
+
+.back-button {
+    position:absolute;
+    top:0.3em;
+    left:0.5em;
+    right:50%;
+    margin:0 auto;
+}
+
+button {
+  position: relative;
+  //display:block;
+  height: 40px;
+  width: 100px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 3px #fff solid;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+
+#right-side {
+    width: 50%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:0;
+    left:50%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.square {
+    max-width: 217px;
+    margin-top: 15em;
+}
+
+#body { 
+    width: 41%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:50%;
+    margin:0 auto;
+    height: 526px;
+    padding: 3.5em;}
+
+
+/*----- PAGE ANIMATIONS ------*/
+
+.animatedpara {
+    animation: fadeAndScale 1s ease-in;
+    transform-origin: center bottom;
+}
+
+@keyframes fadeAndScale {
+    from {
+       opacity: 0;
+    }
+    
+    to{
+     opacity: 1;  
+    }
+}
+
+.animatedtable {
+    animation: fadeAndScale 1.5s ease-in;
+    transform-origin: center bottom;
+}
+
+
+/*--------------- ELEMENTS PAGE ---------------*/
+
+
+
+/*------ background divs -------*/
+
+.main-elements-bg {  
+    background-image: url(../images/elements-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 726px;
+}
+
+
+
+.one {
+    width: 19.4%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0 auto;
+    background: 00000;
+    opacity: 0;
+		-webkit-transition:all 0.30s ease-in-out;
+		-moz-transition:all 0.30s ease-in-out;
+		-o-transition:all 0.30s ease-in-out;
+		-ms-transition:all 0.30s ease-in-out;
+		transition:all 0.30s ease-in-out;
+}
+
+.one:hover {
+    opacity: 1;
+    background: #E68163;   
+    background: -webkit-linear-gradient(left top, #E68163, #DA728B); 
+    background: -o-linear-gradient(bottom right, #E68163, #DA728B); 
+    background: -moz-linear-gradient(bottom right, #E68163, #DA728B);
+    background: linear-gradient(to bottom right, #E68163, #DA728B); 
+}
+
+
+
+.two {
+    width: 19.4%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:20.02%;
+    margin:0 auto;
+    background: 00000;
+    opacity: 0;
+		-webkit-transition:all 0.30s ease-in-out;
+		-moz-transition:all 0.30s ease-in-out;
+		-o-transition:all 0.30s ease-in-out;
+		-ms-transition:all 0.30s ease-in-out;
+		transition:all 0.30s ease-in-out;
+}
+
+.two:hover {
+    opacity: 1;
+    background: #B5D363; 
+    background: -webkit-linear-gradient(left top, #B5D363, #58BA69); 
+    background: -o-linear-gradient(bottom right, #B5D363, #58BA69); 
+    background: -moz-linear-gradient(bottom right, #B5D363, #58BA69);
+    background: linear-gradient(to bottom right, #B5D363, #58BA69);
+}
+
+.three { 
+width: 19.45%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:40.13%;
+    margin:0 auto;
+    background: 00000;
+    opacity: 0;
+		-webkit-transition:all 0.30s ease-in-out;
+		-moz-transition:all 0.30s ease-in-out;
+		-o-transition:all 0.30s ease-in-out;
+		-ms-transition:all 0.30s ease-in-out;
+		transition:all 0.30s ease-in-out;
+}
+
+.three:hover {
+    opacity: 1;
+    background: #469BB3;    
+    background: -webkit-linear-gradient(left top, #7DCCC6, #469BB3);
+    background: -o-linear-gradient(bottom right, #7DCCC6, #469BB3); 
+    background: -moz-linear-gradient(bottom right, #7DCCC6, #469BB3); 
+    background: linear-gradient(to bottom right, #7DCCC6, #469BB3);  
+}
+
+
+.four { 
+width: 19.45%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left: 60.3%;
+    margin:0 auto;
+    background: 00000;
+    opacity: 0;
+		-webkit-transition:all 0.30s ease-in-out;
+		-moz-transition:all 0.30s ease-in-out;
+		-o-transition:all 0.30s ease-in-out;
+		-ms-transition:all 0.30s ease-in-out;
+		transition:all 0.30s ease-in-out;
+}
+
+.four:hover {
+    opacity: 1;
+    background: #6B95BB;   
+    background: -webkit-linear-gradient(left top, #6B95BB, #AF73AE); 
+    background: -o-linear-gradient(bottom right, #6B95BB, #AF73AE); 
+    background: -moz-linear-gradient(bottom right, #6B95BB, #AF73AE); 
+    background: linear-gradient(to bottom right, #6B95BB, #AF73AE);  
+}
+
+
+.five { 
+width: 19.45%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left: 80.52%;
+    margin:0 auto;
+    background: 00000;
+    opacity: 0;
+		-webkit-transition:all 0.30s ease-in-out;
+		-moz-transition:all 0.30s ease-in-out;
+		-o-transition:all 0.30s ease-in-out;
+		-ms-transition:all 0.30s ease-in-out;
+		transition:all 0.30s ease-in-out;
+}
+
+.five:hover {
+    opacity: 1;
+    background: #EED13E;  
+    background: -webkit-linear-gradient(left top, #EED13E, #C78A66); 
+    background: -o-linear-gradient(bottom right, #EED13E, #C78A66); 
+    background: -moz-linear-gradient(bottom right, #EED13E, #C78A66); 
+    background: linear-gradient(to bottom right, #EED13E, #C78A66); 
+}
+
+/*--------------------- HYDROGREN PAGE ----------------------*/
+
+#grad1 {
+    width: 50%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:50%;
+    margin:0 auto;
+    opacity: 0.87;
+    background: #E68163; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #E68163, #DA728B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #E68163, #DA728B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #E68163, #DA728B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #E68163, #DA728B); /* Standard syntax (must be last) */
+}
+
+/*#grad1 {
+    background-image: url(../images/grad1-01.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:50%;
+    margin:0 auto;
+}*/
+
+
+
+/*----- Table ------*/
+
+table {
+    width: 97%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.1em;
+    color: #ffffff;
+    border-collapse: collapse;
+    margin-top: 2em;
+}
+
+th {font-weight: bold;}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+
+tr { 
+  border: solid #ECBE9D;
+  border-width: 4px 0;
+}
+
+tr:first-child {
+  border-top: none;
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+tr:hover
+    {background: #EDA483;}
+
+
+/*----- Buttons ------*/
+
+.next-button-hydrogen button{
+    position:absolute;
+    float: left;
+    top:0.9em;
+    right: 1em;
+    margin:0 auto;
+     background: #E68163;    
+    background: -webkit-linear-gradient(left top, #E68163, #DA728B); 
+    background: -o-linear-gradient(bottom right, #E68163, #DA728B); 
+    background: -moz-linear-gradient(bottom right, #E68163, #DA728B); 
+    background: linear-gradient(to bottom right, #E68163, #DA728B); 
+    border: 3px #E68163 solid;
+}
+
+
+.fill-hydrogen:hover {
+  color: #E68163;
+}
+
+
+
+.fill-hydrogen:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill-hydrogen:hover:before {
+  top: 0;
+}
+
+
+/*------------------------- FLUORINE PAGE ------------------------*/
+
+#grad2 {
+    width: 50%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:50%;
+    margin:0 auto;
+    opacity: 0.87;
+    background: #6B95BB;   
+    background: -webkit-linear-gradient(left top, #6B95BB, #AF73AE); 
+    background: -o-linear-gradient(bottom right, #6B95BB, #AF73AE); 
+    background: -moz-linear-gradient(bottom right, #6B95BB, #AF73AE); 
+    background: linear-gradient(to bottom right, #6B95BB, #AF73AE); 
+}
+
+
+/*----- Table ------*/
+
+.f-table tr {
+    border: solid #AFCFE8;
+  border-width: 4px 0;
+}
+
+
+.f-table tr:first-child {
+  border-top: none;
+}
+.f-table tr:last-child {
+  border-bottom: none;
+}
+
+.f-table tr:hover
+    {background: #8AB1CE;}
+
+
+/*----- Buttons ------*/
+
+.next-button-fluorine button{
+    position:absolute;
+    float: left;
+    top:0.9em;
+    right: 1em;
+    margin:0 auto;
+    background: #6B95BB;  
+    background: -webkit-linear-gradient(left top, #6B95BB, #AF73AE);
+    background: -o-linear-gradient(bottom right, #6B95BB, #AF73AE); 
+    background: -moz-linear-gradient(bottom right, #6B95BB, #AF73AE); 
+    background: linear-gradient(to bottom right, #6B95BB, #AF73AE);
+    border: 3px #6B95BB solid;
+}
+
+
+.fill-fluorine:hover {
+  color: #6B95BB;
+}
+
+.fill-fluorine:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill-fluorine:hover:before {
+  top: 0;
+}
+
+
+/*------------------------- SULFUR PAGE ------------------------*/
+
+#grad3 {
+    width: 50%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:50%;
+    margin:0 auto;
+    opacity: 0.87;
+    background: #EED13E;  
+    background: -webkit-linear-gradient(left top, #EED13E, #C78A66); 
+    background: -o-linear-gradient(bottom right, #EED13E, #C78A66); 
+    background: -moz-linear-gradient(bottom right, #EED13E, #C78A66); 
+    background: linear-gradient(to bottom right, #EED13E, #C78A66); 
+}
+
+/*----- Table ------*/
+
+.s-table tr {
+    border: solid #F7E69C;
+  border-width: 4px 0;
+}
+
+
+.s-table tr:first-child {
+  border-top: none;
+}
+.s-table tr:last-child {
+  border-bottom: none;
+}
+
+.s-table tr:hover
+    {background: #EDD56E;}
+
+
+/*----- Buttons ------*/
+
+.next-button-sulfur button{
+    position:absolute;
+    float: left;
+    top:0.9em;
+    right: 1em;
+    margin:0 auto;
+    background: #EED13E;   
+    background: -webkit-linear-gradient(left top, #EED13E, #C78A66);
+    background: -o-linear-gradient(bottom right, #EED13E, #C78A66); 
+    background: -moz-linear-gradient(bottom right, #EED13E, #C78A66); 
+    background: linear-gradient(to bottom right, #EED13E, #C78A66); 
+    border: 3px #EED13E solid;
+}
+
+
+.fill-sulfur:hover {
+  color: #EED13E;
+}
+
+.fill-sulfur:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill-sulfur:hover:before {
+  top: 0;
+}
+
+
+
+/*------------------------- CARBON PAGE ------------------------*/
+
+#grad4 {
+    width: 50%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:50%;
+    margin:0 auto;
+    opacity: 0.87;
+     background: #B5D363; 
+    background: -webkit-linear-gradient(left top, #B5D363, #58BA69); 
+    background: -o-linear-gradient(bottom right, #B5D363, #58BA69); 
+    background: -moz-linear-gradient(bottom right, #B5D363, #58BA69); 
+    background: linear-gradient(to bottom right, #B5D363, #58BA69); 
+}
+
+/*----- Table ------*/
+
+.c-table tr {
+    border: solid #D9EA98;
+  border-width: 4px 0;
+}
+
+
+.c-table tr:first-child {
+  border-top: none;
+}
+.c-table tr:last-child {
+  border-bottom: none;
+}
+
+.c-table tr:hover
+    {background: #B5D363;}
+
+
+/*----- Buttons ------*/
+
+.next-button-carbon button{
+    position:absolute;
+    float: left;
+    top:0.9em;
+    right: 1em;
+    margin:0 auto;
+    background: #B5D363;  
+    background: -webkit-linear-gradient(left top, #B5D363, #58BA69); 
+    background: -o-linear-gradient(bottom right, #B5D363, #58BA69); 
+    background: -moz-linear-gradient(bottom right, #B5D363, #58BA69); 
+    background: linear-gradient(to bottom right, #B5D363, #58BA69); 
+    border: 3px #B5D363 solid;
+}
+
+
+.fill-carbon:hover {
+  color: #B5D363;
+}
+
+.fill-carbon:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill-carbon:hover:before {
+  top: 0;
+}
+
+
+
+/*------------------------- OXYGEN PAGE ------------------------*/
+
+#grad5 {
+    width: 50%;
+    height: 726px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:50%;
+    margin:0 auto;
+    opacity: 0.87;
+    background: #469BB3; 
+    background: -webkit-linear-gradient(left top, #7DCCC6, #469BB3); 
+    background: -o-linear-gradient(bottom right, #7DCCC6, #469BB3); 
+    background: -moz-linear-gradient(bottom right, #7DCCC6, #469BB3); 
+    background: linear-gradient(to bottom right, #7DCCC6, #469BB3); 
+}
+
+/*----- Table ------*/
+
+.o-table tr {
+    border: solid #A9E1EA;
+  border-width: 4px 0;
+}
+
+
+.o-table tr:first-child {
+  border-top: none;
+}
+.o-table tr:last-child {
+  border-bottom: none;
+}
+
+.o-table tr:hover
+    {background: #82CEDB;}
+
+
+/*----- Buttons ------*/
+
+.next-button-oxygen button{
+    position:absolute;
+    float: left;
+    top:0.9em;
+    right: 1em;
+    margin:0 auto;
+    background: #469BB3;    
+    background: -webkit-linear-gradient(left top, #7DCCC6, #469BB3);
+    background: -o-linear-gradient(bottom right, #7DCCC6, #469BB3); 
+    background: -moz-linear-gradient(bottom right, #7DCCC6, #469BB3); 
+    background: linear-gradient(to bottom right, #7DCCC6, #469BB3);    
+    border: 3px #7DCCC6 solid;
+}
+
+
+.fill-oxygen:hover {
+  color: #7DCCC6;
+}
+
+.fill-oxygen:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill-oxygen:hover:before {
+  top: 0;
+}
