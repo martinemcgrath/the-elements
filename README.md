@@ -9,6 +9,6 @@ Two posters designed to gather key information about the chosen element.
 
 - [User Persona](http://martinemcgrath.github.io/the-elements/images/user-persona.png) - A user persona to indentify my target audience.
 
-- [Style Tile](http://martinemcgrath.github.io/the-elements/images/element-style-tile.png)
+- [Style Tile](http://martinemcgrath.github.io/the-elements/images/elements-style-tile.png)
 
 -  [Final Website](http://martinemcgrath.github.io/the-elements/index.html) 
