@@ -1,0 +1,21 @@
+/*------------------------------- MEDIA QUERIES -------------------------------*/
+
+@media screen and (max-width: 1000px) { 
+
+    #grad4 {height: 850px;}
+    
+}
+
+@media screen and (max-width: 900px) { 
+
+    #grad4 {height: 900px;}
+}
+
+/*-----TABLET & SMARTPHONE-------*/
+
+@media (max-width: 768px) {
+    
+    #grad4 {height: 950px;}
+}
+
+

@@ -11,7 +11,6 @@ p, h1, h2, h3
         min-width: 320px;
         font-family: 'PT Sans', sans-serif;
         margin: auto;   
-        background-colour: #fff;
         color: #ffffff;
         line-height: 2em;
     }
@@ -21,9 +20,24 @@ p, h1, h2, h3
 
 h1 { 
     font-family: 'Roboto', sans-serif;
-    font-size: 4.2em;
+    font-size: 3.8em;
     font-weight: bold;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
+    margin-bottom: -0.2em;
+    margin-top: 0.2em;
+    }
+
+h2 {font-family: 'Roboto', sans-serif;
+    font-size: 2.3em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: -1em;}
+
+h3 { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.3em;
+    font-weight: bold;
+    letter-spacing: 5px;
     margin-bottom: -0.2em;
     margin-top: 0.2em;
     }
@@ -34,13 +48,243 @@ p { line-height: 1.8em;
 
 
 
-/*--------------- DEFAULT CODE ---------------*/
+/*-------------------- HOME ------------------*/
 
-.elements-bg {
-    background-image: url(../images/bg.svg);
+.bg { background-image: url(../images/home-bg.svg);
     background-size: cover;
     background-position: center center;
     height: 726px;
+    }
+
+.home { background-color: antiquewhite;}
+
+.home-text { 
+    max-width: 43%;
+    position:absolute;
+    top:8em;
+    left: 4em;
+    }
+
+.home p {font-size: 1.2em;}
+
+
+.enter button{
+    width: 160px;
+    border: 3px #fff solid;
+    margin-left: 0em;}
+
+
+.fill:hover {
+  color: #7DCCC6;
+}
+
+
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.fill:hover:before {
+  top: 0;
+}
+
+
+
+/*--------------- HOMEPAGE - ANIMATED BUBBLES ---------------*/
+
+
+@-webkit-keyframes bubble1{
+    0%{bottom:1px; left:31px; transform:scale(.1); opacity:1; background:#5597D8;}
+    10%{bottom:5px; left:27px; transform:scale(.2); opacity:1; background:#5597D8; }
+    20%{bottom:10px; left:31px; transform:scale(.2); opacity:1; background:#5597D8;}
+    30%{bottom:15px; left:25px; transform:scale(.3);opacity:1; background:#5597D8;}
+    40%{bottom:19px; left:31px; transform:scale(.4); opacity:1; background:#5597D8; }
+    49%{bottom:19px; left:27px; transform:scale(.4); opacity:1; background:#5597D8; }
+    50%{bottom:19px; left:27px; transform:scale(.5); opacity:1; background:#5597D8; }
+    60%{bottom:55px; left:31x; transform:scale(.6); }
+    70%{bottom:60px; left:26px; transform:scale(.7); }
+    80%{bottom:65px; left:31px; transform:scale(.8);}
+    90%{bottom:70px; left:27px; transform:scale(1); }
+    99%{bottom:73px; left:31px; transform:scale(1); opacity:.5;}
+    100%{bottom:73px; left:31px; transform:scale(5); opacity:0; background:#5597D8;}
+}
+
+@-webkit-keyframes bubble2{
+    0%{bottom:1px; left:23px; transform:scale(.1); opacity:1; background:#fff;}
+    10%{bottom:5px; left:28px; transform:scale(.2); opacity:1; background:#fff; }
+    20%{bottom:10px; left:23px; transform:scale(.2); opacity:1; background:#fff;}
+    30%{bottom:15px; left:28px; transform:scale(.3);opacity:1; background:#fff;}
+    40%{bottom:19px; left:23px; transform:scale(.4); opacity:1; background:#fff; }
+    49%{bottom:19px; left:28px; transform:scale(.4); opacity:1; background:#fff;}
+    50%{bottom:19px; left:28px; transform:scale(.5); opacity:1; background:#fff;}
+    60%{bottom:55px; left:23px; transform:scale(.6); }
+    70%{bottom:60px; left:28px; transform:scale(.7); }
+    80%{bottom:65px; left:23px; transform:scale(.8);}
+    90%{bottom:70px; left:28px; transform:scale(1); }
+    99%{bottom:73px; left:23px; transform:scale(1); opacity:.5; }
+    100%{bottom:73px; left:23px; transform:scale(5); opacity:0; background:#fff;}
+}
+
+.lab {
+    position: relative;
+    margin: 0px auto 0;
+    width: 42px;
+    top: -230px;
+    left: 160px;
+}
+
+
+.lab i {
+    z-index: 1;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 16px;
+    opacity: 0;
+    -webkit-animation: bubble1 linear 3s infinite;
+}
+
+.lab i:nth-child(1) {-webkit-animation-name: bubble1;}
+.lab i:nth-child(2) {-webkit-animation-delay: .7s;-webkit-animation-name: bubble2;}
+.lab i:nth-child(3) {-webkit-animation-delay: 1.5s;-webkit-animation-name: bubble1;}
+.lab i:nth-child(4) {-webkit-animation-delay: 2.3s;-webkit-animation-name: bubble2;}
+
+
+.lab2 {
+    position: relative;
+    margin: 0px auto 0;
+    width: 42px;
+    top: -430px;
+    left: 320px;
+}
+
+
+.lab2 i {
+    z-index: 1;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    -webkit-animation: bubble1 linear 3s infinite;
+}
+
+.lab2 i:nth-child(1) {-webkit-animation-name: bubble1;}
+.lab2 i:nth-child(2) {-webkit-animation-delay: .7s;-webkit-animation-name: bubble2;}
+.lab2 i:nth-child(3) {-webkit-animation-delay: 1.5s;-webkit-animation-name: bubble1;}
+.lab2 i:nth-child(4) {-webkit-animation-delay: 2.3s;-webkit-animation-name: bubble2;}
+
+
+.bubble {
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 40px;
+	position: absolute;
+	top: 190px;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+
+@keyframes liquid {
+	0% {
+		height: 50px;
+	}
+	10% {
+		height: 97px;
+	}
+	35% {
+		height: 100px;
+	}
+	50% {
+		height: 102px;
+	}
+	80% {
+		height: 98px;
+	}
+	100% {
+		height: 100px;
+	}
+}
+@keyframes liquid-color {
+  from {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+
+@keyframes bubble {
+	0% {
+		top: 200px;
+	}
+	100% {
+		top: -200px;
+		opacity: 0;
+	}
+}
+@keyframes side {
+	0% {
+		margin-right: 0px;
+	}
+	100% {
+		margin-right: 35px;
+	}
+}
+
+
+.b5 {
+	left: 985px;
+	transform: scale(0.5);
+	opacity: 0.8;
+	animation: bubble 16s linear infinite, liquid-color 80s infinite, side 5s ease-in-out infinite alternate;
+	animation-delay: 1s,0s,1s;
+}
+.b5 {
+	left: 995px;
+	animation-delay: 0s,0s,0s;
+}
+.b6,.b7 {
+	left: 900px;
+	transform: scale(0.6);
+	opacity: 0.4;
+	animation: bubble 10s linear infinite, liquid-color 60s infinite, side 1s ease-in-out infinite alternate;
+	animation-delay: 0s,0s,0s;
+}
+.b7 {
+	left: 950px;
+	transform: scale(0.7);
+	animation-delay: 0s,0s,0s;
+}
+
+.b9 {
+	left: 985px;
+	transform: scale(0.65);
+	opacity: 0.7;
+	animation: bubble 20s linear infinite, liquid-color 80s infinite, side 5s ease-in-out infinite alternate;
+}
+
+
+
+/*--------------- DEFAULT CODE ---------------*/
+
+.elements-bg {
+position: fixed;
+left: 0;
+top: 0;
+height: 726px;
+opacity: 0.1;
 }
 
 
@@ -78,9 +322,12 @@ button {
 
 
 #right-side {
-    width: 50%;
+    background-image: url(../images/bg-01.svg);
+    background-size: cover;
+    background-position: center center;
     height: 726px;
-    position:absolute;
+    width: 50%;
+    position:fixed;
     top:0;
     left:0;
     left:50%;
@@ -88,9 +335,10 @@ button {
     text-align: center;
 }
 
+
 .square {
     max-width: 217px;
-    margin-top: 15em;
+    margin-top: 15.15em;
 }
 
 #body { 
@@ -101,7 +349,34 @@ button {
     right:50%;
     margin:0 auto;
     height: 526px;
-    padding: 3.5em;}
+    padding: 3.5em;
+    opacity: 1;}
+
+
+.h-pronoun { 
+            font-size: 1.15em;
+            word-spacing: 0.5em;
+            color: #FFD8C2;}
+
+.c-pronoun { 
+            font-size: 1.15em;
+            word-spacing: 0.5em;
+            color: #F2FCC8;}
+
+.o-pronoun { 
+            font-size: 1.15em;
+            word-spacing: 0.5em;
+            color: #D0FAFC;}
+
+.f-pronoun { 
+            font-size: 1.15em;
+            word-spacing: 0.5em;
+            color: #CDE9FC;}
+
+.s-pronoun { 
+            font-size: 1.15em;
+            word-spacing: 0.5em;
+            color: #FCF2C8;}
 
 
 /*----- PAGE ANIMATIONS ------*/
@@ -129,37 +404,26 @@ button {
 
 /*--------------- ELEMENTS PAGE ---------------*/
 
+header {text-align: center;}
 
+.atomic {max-width: 170px;}
+
+.symbol { max-width: 180px;
+          margin-top: 11em;}
 
 /*------ background divs -------*/
 
-.main-elements-bg {  
-    background-image: url(../images/elements-bg.svg);
-    background-size: cover;
-    background-position: center center;
-    height: 726px;
-}
-
-
-
 .one {
-    width: 19.4%;
+    width: 19.5%;
     height: 726px;
     position:absolute;
     top:0;
     left:0;
     margin:0 auto;
-    background: 00000;
-    opacity: 0;
-		-webkit-transition:all 0.30s ease-in-out;
-		-moz-transition:all 0.30s ease-in-out;
-		-o-transition:all 0.30s ease-in-out;
-		-ms-transition:all 0.30s ease-in-out;
-		transition:all 0.30s ease-in-out;
+    background-image: url(../images/strip-01.svg);
 }
 
 .one:hover {
-    opacity: 1;
     background: #E68163;   
     background: -webkit-linear-gradient(left top, #E68163, #DA728B); 
     background: -o-linear-gradient(bottom right, #E68163, #DA728B); 
@@ -170,23 +434,16 @@ button {
 
 
 .two {
-    width: 19.4%;
+    width: 19.7%;
     height: 726px;
     position:absolute;
     top:0;
     left:20.02%;
     margin:0 auto;
-    background: 00000;
-    opacity: 0;
-		-webkit-transition:all 0.30s ease-in-out;
-		-moz-transition:all 0.30s ease-in-out;
-		-o-transition:all 0.30s ease-in-out;
-		-ms-transition:all 0.30s ease-in-out;
-		transition:all 0.30s ease-in-out;
+    background-image: url(../images/strip-02.svg);
 }
 
 .two:hover {
-    opacity: 1;
     background: #B5D363; 
     background: -webkit-linear-gradient(left top, #B5D363, #58BA69); 
     background: -o-linear-gradient(bottom right, #B5D363, #58BA69); 
@@ -195,23 +452,16 @@ button {
 }
 
 .three { 
-width: 19.45%;
+width: 19.7%;
     height: 726px;
     position:absolute;
     top:0;
     left:40.13%;
     margin:0 auto;
-    background: 00000;
-    opacity: 0;
-		-webkit-transition:all 0.30s ease-in-out;
-		-moz-transition:all 0.30s ease-in-out;
-		-o-transition:all 0.30s ease-in-out;
-		-ms-transition:all 0.30s ease-in-out;
-		transition:all 0.30s ease-in-out;
+    background-image: url(../images/strip-03.svg);
 }
 
 .three:hover {
-    opacity: 1;
     background: #469BB3;    
     background: -webkit-linear-gradient(left top, #7DCCC6, #469BB3);
     background: -o-linear-gradient(bottom right, #7DCCC6, #469BB3); 
@@ -221,23 +471,16 @@ width: 19.45%;
 
 
 .four { 
-width: 19.45%;
+width: 19.75%;
     height: 726px;
     position:absolute;
     top:0;
     left: 60.3%;
     margin:0 auto;
-    background: 00000;
-    opacity: 0;
-		-webkit-transition:all 0.30s ease-in-out;
-		-moz-transition:all 0.30s ease-in-out;
-		-o-transition:all 0.30s ease-in-out;
-		-ms-transition:all 0.30s ease-in-out;
-		transition:all 0.30s ease-in-out;
+    background-image: url(../images/strip-04.svg);
 }
 
 .four:hover {
-    opacity: 1;
     background: #6B95BB;   
     background: -webkit-linear-gradient(left top, #6B95BB, #AF73AE); 
     background: -o-linear-gradient(bottom right, #6B95BB, #AF73AE); 
@@ -247,23 +490,16 @@ width: 19.45%;
 
 
 .five { 
-width: 19.45%;
+   width: 19.45%;
     height: 726px;
     position:absolute;
     top:0;
     left: 80.52%;
     margin:0 auto;
-    background: 00000;
-    opacity: 0;
-		-webkit-transition:all 0.30s ease-in-out;
-		-moz-transition:all 0.30s ease-in-out;
-		-o-transition:all 0.30s ease-in-out;
-		-ms-transition:all 0.30s ease-in-out;
-		transition:all 0.30s ease-in-out;
+    background-image: url(../images/strip-05.svg);
 }
 
 .five:hover {
-    opacity: 1;
     background: #EED13E;  
     background: -webkit-linear-gradient(left top, #EED13E, #C78A66); 
     background: -o-linear-gradient(bottom right, #EED13E, #C78A66); 
@@ -275,7 +511,7 @@ width: 19.45%;
 
 #grad1 {
     width: 50%;
-    height: 726px;
+    height: 100%;
     position:absolute;
     top:0;
     left:0;
@@ -288,19 +524,6 @@ width: 19.45%;
     background: -moz-linear-gradient(bottom right, #E68163, #DA728B); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, #E68163, #DA728B); /* Standard syntax (must be last) */
 }
-
-/*#grad1 {
-    background-image: url(../images/grad1-01.svg);
-    background-size: cover;
-    background-position: center center;
-    height: 726px;
-    position:absolute;
-    top:0;
-    left:0;
-    right:50%;
-    margin:0 auto;
-}*/
-
 
 
 /*----- Table ------*/
@@ -340,7 +563,7 @@ tr:hover
 /*----- Buttons ------*/
 
 .next-button-hydrogen button{
-    position:absolute;
+    position:fixed;
     float: left;
     top:0.9em;
     right: 1em;
@@ -418,7 +641,7 @@ tr:hover
 /*----- Buttons ------*/
 
 .next-button-fluorine button{
-    position:absolute;
+    position:fixed;
     float: left;
     top:0.9em;
     right: 1em;
@@ -493,7 +716,7 @@ tr:hover
 /*----- Buttons ------*/
 
 .next-button-sulfur button{
-    position:absolute;
+    position:fixed;
     float: left;
     top:0.9em;
     right: 1em;
@@ -533,7 +756,7 @@ tr:hover
 
 #grad4 {
     width: 50%;
-    height: 726px;
+    height: 100%;
     position:absolute;
     top:0;
     left:0;
@@ -569,7 +792,7 @@ tr:hover
 /*----- Buttons ------*/
 
 .next-button-carbon button{
-    position:absolute;
+    position:fixed;
     float: left;
     top:0.9em;
     right: 1em;
@@ -645,7 +868,7 @@ tr:hover
 /*----- Buttons ------*/
 
 .next-button-oxygen button{
-    position:absolute;
+    position:fixed;
     float: left;
     top:0.9em;
     right: 1em;
@@ -677,4 +900,159 @@ tr:hover
 
 .fill-oxygen:hover:before {
   top: 0;
+}
+
+
+/*------------------------------- MEDIA QUERIES -------------------------------*/
+
+@media screen and (max-width: 1200px) { 
+
+    .home-text { 
+    max-width: 50%;
+    }
+    
+    .bubbles {
+display: none;
+}
+    
+    .bg {
+        height: 658px; 
+    }
+    
+    
+    .lab {
+    left: 145px;
+    top: -210px;
+}
+
+
+.lab2 {
+    left: 290px;
+    top: -390px;
+}
+       
+}
+
+
+@media screen and (max-width: 1000px) { 
+
+    h1 { 
+    font-size: 3.3em;
+    margin-top: 0.3em;
+    }
+    
+    
+    #grad1 {height: 800px;}
+    
+}
+
+
+@media screen and (max-width: 900px) { 
+
+    h3{font-size: 3.5em; }
+
+}
+
+@media screen and (max-width: 880px) { 
+
+    h1 { 
+    font-size: 2.8em;
+    margin-top: 0.3em;
+    }
+    
+    h2{ font-size: 2em;}
+    
+}
+
+@media screen and (max-width: 867px) { 
+
+    #grad1 {height: 900px;}
+}
+
+@media screen and (max-width: 600px) { 
+
+     .lab2 {
+display: none;
+}
+}
+
+
+
+/*-----TABLET-------*/
+@media (max-width: 768px) {
+     
+p, h1, h2, h3
+{
+        width: 90%;}
+    
+    h1 {font-size: 2.8em;}
+
+.home-text { 
+    max-width: 65%;
+    left: 2em;
+    }
+    
+    .enter { margin-left: 1.5em;}
+    
+    
+    h3 {font-size: }
+    
+    #body { 
+    width: 41%;
+    padding: 2em;
+    margin-top: 2em;
+    }
+    
+    
+	}
+
+/*--------SMARTPHONE--------*/
+@media (max-width: 500px) {
+
+    p, h1, h2, h3
+{
+        width: 90%;}
+
+    
+    .home-text { top:4em; }
+    
+    h1{ font-size: 2.2em;
+        margin-top: 0.7em;
+        margin-bottom: 0.3em;}
+    
+    h2{ font-size: 1.7em;}
+    
+    .enter { margin-left: 0em;}
+    
+    #grad1 {width: 100%;}
+    #grad2 {width: 100%;}
+    #grad3 {width: 100%;}
+    #grad4 {width: 100%;}
+    #grad5 {width: 100%;}
+    
+    #body { width: 90%;}
+    
+    #right-side {
+display: none;
+}
+    
+    .next-button-hydrogen button{ position: absolute;
+                                  background: rgba(255, 0, 0, 0);    
+                                  border: 3px #fff solid;}
+    
+    .next-button-carbon button{ position: absolute;
+                                background: rgba(255, 0, 0, 0);    
+                                border: 3px #fff solid;}
+    
+    .next-button-oxygen button{ position: absolute;
+                                background: rgba(255, 0, 0, 0);    
+                                border: 3px #fff solid;}
+    
+    .next-button-fluorine button{ position: absolute;
+                                  background: rgba(255, 0, 0, 0);    
+                                  border: 3px #fff solid;}
+    
+    .next-button-sulfur button{ position: absolute;
+                                background: rgba(255, 0, 0, 0);    
+                                border: 3px #fff solid;}
 }
