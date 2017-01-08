@@ -1,6 +1,6 @@
 <h1>IXD302 - Designing with Content</h1>
 
-<h2>Elements Deliverable</h2>
+<h2>Elements Website Deliverable</h2>
 
 Two posters designed to gather key information about the chosen element.
 
