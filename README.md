@@ -2,10 +2,13 @@
 
 <h2>Elements Deliverable</h2>
 
-- [Poster One](http://martinemcgrath.github.io/the-elements/images/poster1.png) [Poster Two](http://martinemcgrath.github.io/the-elements/images/poster2.png) - Two posters designed to gather key information about the chosen element.
+Two posters designed to gather key information about the chosen element.
 
-- [User Persona](http://martinemcgrath.github.io/IXD302-bird-project/images/user-persona.png) - A user persona to indentify my target audience.
+- [Poster One](http://martinemcgrath.github.io/the-elements/images/poster1.png) 
+- [Poster Two](http://martinemcgrath.github.io/the-elements/images/poster2.png) 
 
-- [Style Tile](http://martinemcgrath.github.io/IXD302-bird-project/images/element-style-tile.png)
+- [User Persona](http://martinemcgrath.github.io/the-elements/images/user-persona.png) - A user persona to indentify my target audience.
 
--  [Final Website](http://martinemcgrath.github.io/the-elements/elements.html) 
+- [Style Tile](http://martinemcgrath.github.io/the-elements/images/element-style-tile.png)
+
+-  [Final Website](http://martinemcgrath.github.io/the-elements/index.html) 
