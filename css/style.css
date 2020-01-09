@@ -605,7 +605,7 @@ tr:hover
 #grad2 {
     width: 50%;
     height: 726px;
-    position:fixed;
+    position:absolute;
     top:0;
     left:0;
     right:50%;
@@ -757,7 +757,7 @@ tr:hover
 #grad4 {
     width: 50%;
     height: 100%;
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     right:50%;
