@@ -512,7 +512,7 @@ width: 19.75%;
 #grad1 {
     width: 50%;
     height: 100%;
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     right:50%;
